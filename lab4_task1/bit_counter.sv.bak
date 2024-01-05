@@ -1,0 +1,69 @@
+module bit_counter(
+    output logic [2:0] result
+    ,output logic done
+    ,input logic [7:0] num
+    ,input logic start, clk, reset
+);
+
+    logic load_A, rs_A;
+    bc_ctrl controller (
+         .load_A(load_A)
+        ,.rs_A(rs_A)
+        ,.start(start)
+        ,.done(d)
+        ,.clk(clk)
+        ,.reset(reset)
+    );
+
+    logic d;
+    bc_data datapath (
+         .done(d)
+        ,.load_A(load_A)
+        ,.rs_A(rs_A)
+        ,.a_in(num)
+    );
+
+    assign done = d;
+
+endmodule  // bit_counter
+
+module bit_counter_testbench();
+
+    logic [2:0] result;
+    logic done;
+    logic [7:0] num;
+    logic start, clk, reset;
+
+    bit_counter dut (.*);
+
+    parameter CLOCK_PERIOD = 100;
+    initial begin
+        clk <= 0;
+        forever #(CLOCK_PERIOD / 2) clk <= ~clk;
+    end
+
+    initial begin
+        integer i;
+
+        @(posedge clk) reset <= 1; num <= 8'b10101010; start <= 0;
+        @(posedge clk);
+        @(posedge clk) start <= 1;
+
+        for (i = 0; i < 16; i++) begin
+            @(posedge clk);
+        end
+
+        @(posedge clk) start <= 0; num <= 8'b0;
+        @(posedge clk);
+        @(posedge clk) start <= 1;
+        for (i = 0; i < 5; i++) begin
+            @(posedge clk);
+        end
+        
+        @(posedge clk);
+        @(posedge clk);
+
+        $stop;
+    end
+
+endmodule  // bit_counter_testbench

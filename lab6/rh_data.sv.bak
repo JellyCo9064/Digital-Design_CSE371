@@ -1,0 +1,23 @@
+module rh_data (
+		output logic [2:0] rh_start, rh_end
+		,output logic rh_start_valid, rh_end_valid
+		,input logic [2:0] hour
+		,input logic save_start, save_end, clk, reset
+	);
+	
+	
+	always_ff @(posedge clk) begin
+	
+		if (reset) begin
+			rh_start <= '0;
+			rh_end <= '0;
+			rh_start_valid <= '0;
+			rh_end_valid <= '0;
+		end
+	
+	
+	end
+	
+	
+	
+endmodule  // rh_data

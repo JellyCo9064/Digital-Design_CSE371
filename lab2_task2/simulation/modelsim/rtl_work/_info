@@ -1,0 +1,207 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/there/OneDrive - UW/CSE 371/lab2_task2/simulation/modelsim
+vdouble_seg7
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1674195954
+!i10b 1
+!s100 DY^<1FRY2XV;EHQzPh=kR2
+IYBmLAOVOc:g00E]7GMIYf3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 double_seg7_sv_unit
+S1
+R0
+Z5 w1674195173
+Z6 8C:/Users/there/OneDrive - UW/CSE 371/lab2_task2/double_seg7.sv
+Z7 FC:/Users/there/OneDrive - UW/CSE 371/lab2_task2/double_seg7.sv
+L0 18
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1674195954.000000
+Z10 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab2_task2/double_seg7.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab2_task2|C:/Users/there/OneDrive - UW/CSE 371/lab2_task2/double_seg7.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work {+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab2_task2}
+Z14 tCvgOpt 0
+vdouble_seg7_testbench
+R1
+R2
+!i10b 1
+!s100 KAZMkIEIlSb4i0ghf[Y@H0
+I1E=VjQ0dcD8ZF5=CF03NJ0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 76
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vfiveb_counter
+R1
+R2
+!i10b 1
+!s100 UZP;VRa2ZYHK?W3YCDWmX2
+I;=>lKR904]hJmOgF`D1Ie1
+R3
+Z15 !s105 fiveb_counter_sv_unit
+S1
+R0
+Z16 w1674117726
+Z17 8C:/Users/there/OneDrive - UW/CSE 371/lab2_task2/fiveb_counter.sv
+Z18 FC:/Users/there/OneDrive - UW/CSE 371/lab2_task2/fiveb_counter.sv
+L0 20
+R8
+r1
+!s85 0
+31
+R9
+Z19 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab2_task2/fiveb_counter.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab2_task2|C:/Users/there/OneDrive - UW/CSE 371/lab2_task2/fiveb_counter.sv|
+!i113 1
+R12
+R13
+R14
+vfiveb_counter_testbench
+R1
+R2
+!i10b 1
+!s100 ZSPHIeRE]o[MHN:fXZ0]@2
+I`C[j2QWLcGROmkDF?m;4Y1
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 42
+R8
+r1
+!s85 0
+31
+R9
+R19
+R20
+!i113 1
+R12
+R13
+R14
+vlab2_task2
+R1
+R2
+!i10b 1
+!s100 b<O>jG>S8ABOAR3:QLdbe2
+IN=6Z:haG><Bo`hCWVULFF0
+R3
+Z21 !s105 lab2_task2_sv_unit
+S1
+R0
+Z22 w1674195938
+Z23 8C:/Users/there/OneDrive - UW/CSE 371/lab2_task2/lab2_task2.sv
+Z24 FC:/Users/there/OneDrive - UW/CSE 371/lab2_task2/lab2_task2.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+Z25 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab2_task2/lab2_task2.sv|
+Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab2_task2|C:/Users/there/OneDrive - UW/CSE 371/lab2_task2/lab2_task2.sv|
+!i113 1
+R12
+R13
+R14
+vlab2_task2_testbench
+R1
+R2
+!i10b 1
+!s100 PA<UmSUQ`NX7=KX^0iMRM2
+ILL@F2nU7Y@i6KYjGb[DPP3
+R3
+R21
+S1
+R0
+R22
+R23
+R24
+L0 89
+R8
+r1
+!s85 0
+31
+R9
+R25
+R26
+!i113 1
+R12
+R13
+R14
+vlab2_task2_testmodule
+R1
+R2
+!i10b 1
+!s100 dKXzNZELmb=CVBRL5eC7Y1
+IMhKTDlMla9gOEkaH[?OBo3
+R3
+R21
+S1
+R0
+R22
+R23
+R24
+L0 56
+R8
+r1
+!s85 0
+31
+R9
+R25
+R26
+!i113 1
+R12
+R13
+R14
+vram32x4
+R2
+!i10b 1
+!s100 9JJedTWeU:e;4^:[EX2fk2
+I@_]RMP=i=<<]Ff_XEW<gG1
+R3
+R0
+w1674116894
+8C:/Users/there/OneDrive - UW/CSE 371/lab2_task2/ram32x4.v
+FC:/Users/there/OneDrive - UW/CSE 371/lab2_task2/ram32x4.v
+L0 40
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/there/OneDrive - UW/CSE 371/lab2_task2/ram32x4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab2_task2|C:/Users/there/OneDrive - UW/CSE 371/lab2_task2/ram32x4.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab2_task2}
+R14

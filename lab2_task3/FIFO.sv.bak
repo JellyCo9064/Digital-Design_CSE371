@@ -1,0 +1,80 @@
+
+module FIFO #(
+				  parameter width = 4,
+				  parameter depth = 8
+				  )(
+					 input logic clk, reset,
+					 input logic read, write,
+					 input logic [depth-1:0] inputBus,
+					output logic resetState,
+					output logic empty, full,
+					output logic [depth-1:0] outputBus
+				   );
+	
+	logic writeIn, readIn;
+	logic wr_en, rd_en;
+	
+	logic [width-1:0] readAddr, writeAddr;
+	
+	oneStep OS (.clk, .reset, .in(wr_en), .out(resetState));
+	
+	forceOneClk FOC_W (.clk, .reset, .in(write), .out(writeIn));
+	forceOneClk FOC_R (.clk, .reset, .in(read), .out(readIn));
+	
+	RAM_DP #(width, depth) RDP (.clk, 
+										  .wr_en, 
+										  .readAddr, 
+										  .writeAddr,
+										  .dataIn(inputBus), 
+										  .dataOut(outputBus)
+										 );
+					
+	FIFO_Control #(width) FC (.clk, .reset, 
+									  .read(readIn), 
+									  .write(writeIn), 
+									  .wr_en,
+									  .rd_en,
+									  .empty,
+									  .full,
+									  .readAddr, 
+									  .writeAddr
+									 );
+	
+endmodule 
+
+module FIFO_testbench();
+	
+	parameter width = 4, depth = 8;
+	
+	logic clk, reset;
+	logic read, write;
+	logic [depth-1:0] inputBus;
+	logic resetState;
+	logic empty, full;
+	logic [depth-1:0] outputBus;
+	
+	FIFO #(width, depth) dut (.*);
+	
+	parameter CLK_Period = 100;
+	
+	initial begin
+		clk <= 1'b0;
+		forever #(CLK_Period/2) clk <= ~clk;
+	end
+	
+	initial begin
+		inputBus <= 8'd0; read <= 1'b0; write <= 1'b0; reset <= 1'b0; @(posedge clk);
+																	  reset <= 1'b1; @(posedge clk);
+																	  reset <= 1'b0; @(posedge clk);
+		inputBus <= 8'd5; 				  write <= 1'b1; @(posedge clk);
+		inputBus <= 8'd8;										  @(posedge clk);
+												  write <= 1'b0; @(posedge clk);
+												  write <= 1'b1; @(posedge clk);
+								read <= 1'b1; write <= 1'b0; @(posedge clk);
+		@(posedge clk);
+		@(posedge clk);
+		$stop;
+	end
+	
+	
+endmodule 

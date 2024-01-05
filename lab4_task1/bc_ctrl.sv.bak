@@ -1,0 +1,56 @@
+module bc_ctrl (
+    output logic load_A, rs_A
+    ,input logic start, done, clk, reset
+    );
+
+    typedef enum logic [1:0] { s_load, s_count, s_done } state;
+
+    state ps, ns;
+
+    logic start_reg;
+
+    always_comb begin
+        case (ps)
+
+            s_load: begin
+                if (start_reg) begin
+                    ns = s_count;
+                end else begin
+                    ns = s_load;
+                end
+            end
+
+            s_count: begin
+                if (done) begin
+                    ns = s_done;
+                end else begin
+                    ns = s_count;
+                end
+            end
+
+            s_done: begin
+                if (!start_reg) begin
+                    ns = s_load;
+                end else begin
+                    ns = s_done;
+                end
+            end
+
+        endcase
+
+        load_A = (ps == s_load);
+        rs_A = (ps == s_count);
+
+    end
+
+    always_ff @(posedge clk) begin
+        if (reset) begin
+            ps <= s_load;
+        end else begin
+            ps <= ns;
+        end
+
+        start_reg <= start;
+    end
+
+endmodule  // bc_ctrl

@@ -1,0 +1,13 @@
+module animator(
+	output logic x, y
+	,input logic clk, reset
+	);
+	
+	logic reset;
+	logic [31:0] timer_out;
+	counter_32b timer (.count(timer_out), .inc(clk), .dec(0), .clk, .reset;
+	
+	logic [31:0] frame_num;
+	counter_32b frame_counter (.count(frame_num), .inc(
+	
+endmodule  // animator

@@ -1,0 +1,160 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/there/OneDrive - UW/CSE 371/lab2_task1/simulation/modelsim
+vdouble_seg7
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1674194943
+!i10b 1
+!s100 DY^<1FRY2XV;EHQzPh=kR2
+I8BDEcNbnR;YXo1Hzz=RVF2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 double_seg7_sv_unit
+S1
+R0
+Z5 w1674193182
+Z6 8C:/Users/there/OneDrive - UW/CSE 371/lab2_task1/double_seg7.sv
+Z7 FC:/Users/there/OneDrive - UW/CSE 371/lab2_task1/double_seg7.sv
+L0 18
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1674194943.000000
+Z10 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab2_task1/double_seg7.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab2_task1|C:/Users/there/OneDrive - UW/CSE 371/lab2_task1/double_seg7.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work {+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab2_task1}
+Z14 tCvgOpt 0
+vdouble_seg7_testbench
+R1
+R2
+!i10b 1
+!s100 hHFdI4cMMLg9DocjcS`7[3
+IhUMzJ<CTbL6[GXN`KgWVM2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 76
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vlab2_task1
+R1
+R2
+!i10b 1
+!s100 <W;YLU?81mY[JO^1^M4G`3
+IL:T[i1FgikZm3>1nnAU8?1
+R3
+Z15 !s105 lab2_task1_sv_unit
+S1
+R0
+Z16 w1674194918
+Z17 8C:/Users/there/OneDrive - UW/CSE 371/lab2_task1/lab2_task1.sv
+Z18 FC:/Users/there/OneDrive - UW/CSE 371/lab2_task1/lab2_task1.sv
+L0 23
+R8
+r1
+!s85 0
+31
+R9
+Z19 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab2_task1/lab2_task1.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab2_task1|C:/Users/there/OneDrive - UW/CSE 371/lab2_task1/lab2_task1.sv|
+!i113 1
+R12
+R13
+R14
+vlab2_task1_testbench
+R1
+R2
+!i10b 1
+!s100 WHGlT8o6lHeGc6T3c:eK>3
+I][?IBZQFM2cKm>?M^A6EH2
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 61
+R8
+r1
+!s85 0
+31
+R9
+R19
+R20
+!i113 1
+R12
+R13
+R14
+vram
+R1
+R2
+!i10b 1
+!s100 oI?9Q]EGI_FhbXhcB`gId3
+IJZ[Sbl;bH1i7daeNA95R11
+R3
+Z21 !s105 ram_sv_unit
+S1
+R0
+Z22 w1674193462
+Z23 8C:/Users/there/OneDrive - UW/CSE 371/lab2_task1/ram.sv
+Z24 FC:/Users/there/OneDrive - UW/CSE 371/lab2_task1/ram.sv
+L0 20
+R8
+r1
+!s85 0
+31
+R9
+Z25 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab2_task1/ram.sv|
+Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab2_task1|C:/Users/there/OneDrive - UW/CSE 371/lab2_task1/ram.sv|
+!i113 1
+R12
+R13
+R14
+vram_testbench
+R1
+R2
+!i10b 1
+!s100 oZoa6?jj3VdG2@Rbk;KUI0
+IKFHCQWJP^4XG6;aIoTGob1
+R3
+R21
+S1
+R0
+R22
+R23
+R24
+L0 53
+R8
+r1
+!s85 0
+31
+R9
+R25
+R26
+!i113 1
+R12
+R13
+R14

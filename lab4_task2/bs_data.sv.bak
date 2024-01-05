@@ -1,0 +1,44 @@
+module bs_data (
+    output logic [4:0] index
+    ,output logic found, not_found
+    ,input logic [7:0] A
+    ,input logic reset_IS, load_T, try_S, clk
+    );
+
+    logic [4:0] I, S;
+    logic [7:0] T;
+
+    always_ff @(posedge clk) begin
+        if (reset_IS) begin
+            S <= 5'b10000;
+        end else if (try_S) begin
+            S <= (S >> 1);
+        end
+
+        if (load_T) begin
+            // TODO: Read from RAM
+        end
+
+        if (S == 4'b0) begin
+            found <= 1'b0;
+            not_found <= 1'b1;
+        end else if (T == A) begin
+            found <= 1'b1;
+            not_found <= 1'b0;
+        end else begin
+            found <= 1'b0;
+            not_found <= 1'b0;
+        end
+
+        if (reset_IS) begin
+            I <= 5'b10000;
+        end else if (T > A) begin
+            I <= (I ^ S) | (S >> 1);
+        end else begin
+            I <= I | (S >> 1);
+        end
+
+
+    end
+
+endmodule  // bs_data

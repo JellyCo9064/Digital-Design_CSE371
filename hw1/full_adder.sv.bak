@@ -1,0 +1,9 @@
+module full_adder (
+	output logic S, C
+	,input logic a, b, cin
+	);
+	
+	assign S = a ^ b ^ cin;
+	assign C = a & b | cin & (a ^ b);
+	
+endmodule

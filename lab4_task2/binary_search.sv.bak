@@ -1,0 +1,38 @@
+module binary_search (
+    output logic [4:0] index
+    ,output logic found, not_found
+    ,input logic [7:0] num
+    ,input logic start, clk, reset
+    );
+    
+    logic reset_IS, load_T, try_S;
+    bs_ctrl controller (
+        ,.reset_IS(reset_IS)
+        ,.load_T(load_T)
+        ,.try_S(try_S)
+        ,.start(start)
+        ,.found(found)
+        ,.not_found(not_found)
+        ,.clk(clk)
+        ,.reset(reset)
+    );
+
+    logic found, not_found;
+    bs_data datapath (
+         .index(index)
+        ,.found(found)
+        ,.not_found(not_found)
+        ,.A(num)
+        ,.reset_IS(reset_IS)
+        ,.load_T(load_T)
+        ,.try_S(try_S)
+        ,.clk(clk)
+    );
+
+endmodule  // binary_search
+
+module binary_search_testbench();
+
+
+
+endmodule  // binary_search_testbench

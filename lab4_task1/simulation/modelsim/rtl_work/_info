@@ -1,0 +1,262 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/there/OneDrive - UW/CSE 371/lab4_task1/simulation/modelsim
+vbc_ctrl
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1676268525
+!i10b 1
+!s100 FE=nNRM<:?2KO73PS1OGd0
+IfjMVO34g^2:1lFWbm]WX_3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 bc_ctrl_sv_unit
+S1
+R0
+Z5 w1676242259
+Z6 8C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bc_ctrl.sv
+Z7 FC:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bc_ctrl.sv
+L0 1
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1676268525.000000
+Z10 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bc_ctrl.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab4_task1|C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bc_ctrl.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work {+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab4_task1}
+Z14 tCvgOpt 0
+vbc_ctrl_testbench
+R1
+R2
+!i10b 1
+!s100 8I3N7ZG3RL9lMz6HVT6>f0
+IldUZ]ln9a`S0R655ddBN:1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 58
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vbc_data
+R1
+R2
+!i10b 1
+!s100 BS1CSLnRON6HVbW1e7BI[1
+I=OPYV[f=S6Y?d^2>o<a4U1
+R3
+Z15 !s105 bc_data_sv_unit
+S1
+R0
+Z16 w1676268492
+Z17 8C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bc_data.sv
+Z18 FC:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bc_data.sv
+L0 1
+R8
+r1
+!s85 0
+31
+Z19 !s108 1676268524.000000
+Z20 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bc_data.sv|
+Z21 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab4_task1|C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bc_data.sv|
+!i113 1
+R12
+R13
+R14
+vbc_data_testbench
+R1
+R2
+!i10b 1
+!s100 2h7N@@mldA9MA?]QT77j<3
+I@SOBMLFWgGULM0g3zF5Bm0
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+Z22 L0 31
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R12
+R13
+R14
+vbit_counter
+R1
+Z23 !s110 1676268524
+!i10b 1
+!s100 oVARAo2fPPT1_N0gY_L^g0
+I]kR_g[T[QfAKeJCSRSFl^3
+R3
+Z24 !s105 bit_counter_sv_unit
+S1
+R0
+Z25 w1676242599
+Z26 8C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bit_counter.sv
+Z27 FC:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bit_counter.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R19
+Z28 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bit_counter.sv|
+Z29 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab4_task1|C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bit_counter.sv|
+!i113 1
+R12
+R13
+R14
+vbit_counter_testbench
+R1
+R23
+!i10b 1
+!s100 [ImT3S?`6IgB@ST7LoDU[0
+IgFAU=G2^0=Hi`]Do5@z]U1
+R3
+R24
+S1
+R0
+R25
+R26
+R27
+R22
+R8
+r1
+!s85 0
+31
+R19
+R28
+R29
+!i113 1
+R12
+R13
+R14
+vDE1_SoC_task1
+R1
+R23
+!i10b 1
+!s100 b6BG_bcZLoEX_be9cl;`k1
+I9`PHATW4=S`8zcLLG?0JN3
+R3
+Z30 !s105 DE1_SoC_task1_sv_unit
+S1
+R0
+Z31 w1676268273
+Z32 8C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/DE1_SoC_task1.sv
+Z33 FC:/Users/there/OneDrive - UW/CSE 371/lab4_task1/DE1_SoC_task1.sv
+L0 33
+R8
+r1
+!s85 0
+31
+R19
+Z34 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/DE1_SoC_task1.sv|
+Z35 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab4_task1|C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/DE1_SoC_task1.sv|
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c_task1
+vDE1_SoC_testbench
+R1
+R23
+!i10b 1
+!s100 UZ22BjDhlJ1Q8^bnb6XzX1
+I1CAz1UicSjAb1SBl]K_=z3
+R3
+R30
+S1
+R0
+R31
+R32
+R33
+L0 62
+R8
+r1
+!s85 0
+31
+R19
+R34
+R35
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c_testbench
+vdouble_seg7
+R1
+R23
+!i10b 1
+!s100 DY^<1FRY2XV;EHQzPh=kR2
+Ij^g3aLP^G2C:QnOffQ3H@2
+R3
+Z36 !s105 double_seg7_sv_unit
+S1
+R0
+Z37 w1676103770
+Z38 8C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/double_seg7.sv
+Z39 FC:/Users/there/OneDrive - UW/CSE 371/lab4_task1/double_seg7.sv
+L0 18
+R8
+r1
+!s85 0
+31
+R19
+Z40 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/double_seg7.sv|
+Z41 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab4_task1|C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/double_seg7.sv|
+!i113 1
+R12
+R13
+R14
+vdouble_seg7_testbench
+R1
+R23
+!i10b 1
+!s100 j_3ieRoCa[ZS>`JXIEa1G3
+Im7mfJ3MkfYTnSD?N0<UQO2
+R3
+R36
+S1
+R0
+R37
+R38
+R39
+L0 76
+R8
+r1
+!s85 0
+31
+R19
+R40
+R41
+!i113 1
+R12
+R13
+R14

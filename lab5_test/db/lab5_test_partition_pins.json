@@ -1,0 +1,117 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "tone_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[16]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[17]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[18]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[19]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[20]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[21]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[22]",
+					"strict" : false
+				},
+				{
+					"name" : "tone_data[23]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "write",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

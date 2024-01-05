@@ -1,0 +1,35 @@
+module parking_lot #(
+	parameter capacity = 25
+	)
+	(
+	output logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5
+	,input logic sensor_a, sensor_b, reset, CLOCK_50
+	);
+
+	logic enter, exit;
+	
+	sensor s (.a(sensor_a), .b(sensor_b), .enter, .exit, .clk(CLOCK_50));
+	
+	logic [4:0] car_count;
+	
+	fiveb_counter counter (.count(car_count), .inc(enter), .dec(exit), .clk(CLOCK_50), .reset);
+	
+	double_seg7(.HEX0, .HEX1, .count({2'b00, car_count}));
+	
+	always_comb begin
+	
+		if (car_count == capacity) begin
+			HEX5 = ~7'b1000111;
+			HEX4 = ~7'b0111110;
+			HEX3 = ~7'b0001110;
+			HEX2 = ~7'b0001110;
+		end else begin
+			HEX5 = ~7'b0000000;
+			HEX4 = ~7'b0000000;
+			HEX3 = ~7'b0000000;
+			HEX2 = ~7'b0000000;
+		end
+	
+	end
+	
+endmodule

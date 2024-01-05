@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab6 {C:/Users/there/OneDrive - UW/CSE 371/lab6/ram8x16.v}
+vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab6 {C:/Users/there/OneDrive - UW/CSE 371/lab6/car_tracking.sv}
+

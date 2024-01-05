@@ -1,0 +1,30 @@
+module lab2_task2 #(
+	parameter which_clock = 25
+	)
+	(
+	output logic [6:0] HEX5, HEX4, HEX3, HEX2, HEX1, HEX0
+	,input logic KEY3, KEY2, KEY1, KEY0, CLOCK_50
+	);
+
+	logic [31:0] clk;
+	clock_divider clk_div (.clock(CLOCK_50), .divided_clocks(clk));
+	
+	ram32x4 ram (
+
+endmodule
+
+// divided_clocks[0] = 25MHz, [1] = 12.5Mhz, ... [23] = 3Hz, [24] = 1.5Hz, [25] = 0.75Hz, ...
+module clock_divider (
+  input   logic        clock
+  ,output logic [31:0] divided_clocks
+  );
+
+  initial begin
+    divided_clocks = '0;
+  end
+
+  always_ff @(posedge clock) begin
+    divided_clocks <= divided_clocks + 'd1;
+  end
+
+endmodule  // clock_divider

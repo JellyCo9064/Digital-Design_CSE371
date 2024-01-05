@@ -1,0 +1,27 @@
+module bc_data (
+    output logic done
+    ,input logic load_A, rs_A
+    ,input logic [7:0] a_in;
+    );
+
+    logic [7:0] A;
+    logic [2:0] result;
+
+    always_ff @(posedge clk) begin
+        if (load_A) begin
+            result <= 3'b0;
+            A <= a_in;
+        end
+
+        if (rs_A) begin
+            A <= A >> 1;
+        end
+
+        done <= (A == 0);
+        
+        if (A[0]) begin
+            result <= result + 1;
+        end
+    end
+
+endmodule  // bc_data

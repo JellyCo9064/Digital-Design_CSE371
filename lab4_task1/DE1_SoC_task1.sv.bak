@@ -1,0 +1,104 @@
+/*
+ * Connor Aksama
+ * 02/12/2023
+ * CSE 371
+ * Lab 4
+*/
+
+/**
+ * Top-level module for Lab 3. Instantiates drawing logic modules and connections to VGA controller
+ 
+ * Inputs:
+ * 	SW [10 bit] - The 10 onboard switches, respectively.
+ *  KEY [4 bit] - The 4 onboard keys, respectively.
+ *  CLOCK_50 [1 bit] - The system clock to use for this module.
+ 
+ * Outputs:
+ * 	HEX0 [7 bit] - Data to show on the HEX0 display, formatted in standard 7 segment display format.
+ * 	HEX1 [7 bit] - Data to show on the HEX1 display, formatted in standard 7 segment display format.
+ * 	HEX2 [7 bit] - Data to show on the HEX1 display, formatted in standard 7 segment display format.
+ *	HEX3 [7 bit] - Data to show on the HEX1 display, formatted in standard 7 segment display format.
+ * 	HEX4 [7 bit] - Data to show on the HEX4 display, formatted in standard 7 segment display format.
+ * 	HEX5 [7 bit] - Data to show on the HEX5 display, formatted in standard 7 segment display format.
+ * 	LEDR [10 bit] - Signal to output to 10 onboard LEDs, respectively.
+ *	VGA_R [8 bit] - The red channel value of the pixel to write to the display
+ *	VGA_G [8 bit] - The green channel value of the pixel to write to the display
+ *	VGA_B [8 bit] - The blue channel value of the pixel to write to the display
+ *	VGA_BLANK_N [1 bit] - Blank area signal
+ * 	VGA_CLK [1 bit] - Divided clock for VGA signal
+ *	VGA_HS [1 bit] - VGA timing signal
+ *	VGA_SYNC_N [1 bit] - Unused
+ *	VGA_VS [1 bit] - VGA timing signal
+*/
+module DE1_SoC_task1 (
+    output logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5
+    ,output logic [9:0] LEDR
+    ,input logic [3:0] KEY
+    ,input logic [9:0] SW
+    ,input logic CLOCK_50
+    );
+	
+	assign HEX1 = '1;
+	assign HEX2 = '1;
+	assign HEX3 = '1;
+	assign HEX4 = '1;
+	assign HEX5 = '1;
+	
+    logic [3:0] result;
+    bit_counter bc (
+        .result(result)
+		  ,.num(SW[7:0])
+        ,.done(LEDR[9])
+        ,.start(SW[9])
+        ,.clk(CLOCK_50)
+        ,.reset(~KEY[0]) 
+    );
+
+    double_seg7 res_display (.HEX0(HEX0), .HEX1(), .num({4'b0, result}));
+	
+	
+endmodule  // DE1_SoC_task1
+
+module DE1_SoC_testbench();
+
+    logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
+    logic [9:0] LEDR;
+    logic [3:0] KEY;
+    logic [9:0] SW;
+    logic CLOCK_50, clk;
+	
+    assign CLOCK_50 = clk;
+	
+	 DE1_SoC_task1 dut (.*);
+	
+    parameter CLOCK_PERIOD = 100;
+    initial begin
+        clk <= 0;
+        forever #(CLOCK_PERIOD / 2) clk <= ~clk;
+    end
+
+    initial begin
+        integer i;
+
+        @(posedge clk) KEY[0] <= 1'b0; SW[7:0] <= 8'b10000001; SW[9] <= 0;
+        @(posedge clk); KEY[0] <= 1'b1;
+        @(posedge clk) SW[9] <= 1;
+
+        for (i = 0; i < 16; i++) begin
+            @(posedge clk);
+        end
+
+        @(posedge clk) SW[9] <= 0; SW[7:0] <= 8'b0;
+        @(posedge clk);
+        @(posedge clk) SW[9] <= 1;
+        for (i = 0; i < 5; i++) begin
+            @(posedge clk);
+        end
+        
+        @(posedge clk);
+        @(posedge clk);
+
+        $stop;
+    end
+
+endmodule  // DE1_SoC_task1_testbench

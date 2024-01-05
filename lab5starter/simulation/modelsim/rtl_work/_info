@@ -1,0 +1,354 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/there/OneDrive - UW/CSE 371/lab5starter/simulation/modelsim
+vAltera_UP_Audio_Bit_Counter
+Z1 !s110 1677223229
+!i10b 1
+!s100 J2Tb5SPZN>>^6S@MM9o:c1
+IaZ>MNj1lZ3lUe6FzRX=lR3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1676942027
+8C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_audio_bit_counter.v
+FC:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_audio_bit_counter.v
+Z4 L0 49
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1677223229.000000
+!s107 C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_audio_bit_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab5starter|C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_audio_bit_counter.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work {+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab5starter}
+Z9 tCvgOpt 0
+n@altera_@u@p_@audio_@bit_@counter
+vAltera_UP_Audio_In_Deserializer
+R1
+!i10b 1
+!s100 MnK8@IQLcda;1gGBW7@Tz0
+I8el1lbXl=Q^Wkhl]Rl=lA2
+R2
+R0
+R3
+8C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_audio_in_deserializer.v
+FC:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_audio_in_deserializer.v
+Z10 L0 47
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_audio_in_deserializer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab5starter|C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_audio_in_deserializer.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@audio_@in_@deserializer
+vAltera_UP_Audio_Out_Serializer
+Z11 !s110 1677223230
+!i10b 1
+!s100 BllhdjOFFm6Rj]o@Xid882
+IPf32b1[<AG=jTd5gM[[Mk3
+R2
+R0
+R3
+8C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_audio_out_serializer.v
+FC:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_audio_out_serializer.v
+R10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_audio_out_serializer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab5starter|C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_audio_out_serializer.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@audio_@out_@serializer
+vAltera_UP_Clock_Edge
+R1
+!i10b 1
+!s100 XaX6^HY04T3X?D32?HdN>2
+IDzKFI?FRA6>?Hg`87XS4T2
+R2
+R0
+R3
+8C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_clock_edge.v
+FC:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_clock_edge.v
+Z12 L0 48
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_clock_edge.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab5starter|C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_clock_edge.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@clock_@edge
+vAltera_UP_I2C
+R1
+!i10b 1
+!s100 JU94J3RToJ0DChmlIi^B43
+IQWR<4JWEUYP_Fz4K3IzMH3
+R2
+R0
+R3
+8C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_i2c.v
+FC:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_i2c.v
+R12
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_i2c.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab5starter|C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_i2c.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@i2@c
+vAltera_UP_I2C_AV_Auto_Initialize
+R1
+!i10b 1
+!s100 TbIA;9787GSRoV9be_N2^2
+IQaYeo@O20=e4NNgQnCT491
+R2
+R0
+R3
+8C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_i2c_av_auto_initialize.v
+FC:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_i2c_av_auto_initialize.v
+R12
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_i2c_av_auto_initialize.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab5starter|C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_i2c_av_auto_initialize.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@i2@c_@a@v_@auto_@initialize
+vAltera_UP_Slow_Clock_Generator
+R1
+!i10b 1
+!s100 U@B3NehPQRXcdeI<e=@I53
+I5]f>@e=T?2E_8Rb^]]?o?2
+R2
+R0
+R3
+8C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_slow_clock_generator.v
+FC:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_slow_clock_generator.v
+L0 53
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_slow_clock_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab5starter|C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_slow_clock_generator.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@slow_@clock_@generator
+vAltera_UP_SYNC_FIFO
+R1
+!i10b 1
+!s100 jDg=^5VOBFbFho_;gZbiA1
+IL;B?4g<N[lH4fM1IWmVzY1
+R2
+R0
+R3
+8C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_sync_fifo.v
+FC:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_sync_fifo.v
+R10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_sync_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab5starter|C:/Users/there/OneDrive - UW/CSE 371/lab5starter/altera_up_sync_fifo.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@s@y@n@c_@f@i@f@o
+vaudio_and_video_config
+R1
+!i10b 1
+!s100 z3>_mDg4hMjn4VjXHn00U3
+I;9W9aV9Y2c2YgMR]Hg4H:3
+R2
+R0
+R3
+8C:/Users/there/OneDrive - UW/CSE 371/lab5starter/audio_and_video_config.v
+FC:/Users/there/OneDrive - UW/CSE 371/lab5starter/audio_and_video_config.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/there/OneDrive - UW/CSE 371/lab5starter/audio_and_video_config.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab5starter|C:/Users/there/OneDrive - UW/CSE 371/lab5starter/audio_and_video_config.v|
+!i113 1
+R7
+R8
+R9
+vaudio_codec
+R1
+!i10b 1
+!s100 43h1ad@K@aG98IRVc4i1M1
+IBN4fC[J>HdennEHbfbOPb3
+R2
+R0
+Z13 w1676942028
+8C:/Users/there/OneDrive - UW/CSE 371/lab5starter/audio_codec.v
+FC:/Users/there/OneDrive - UW/CSE 371/lab5starter/audio_codec.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/there/OneDrive - UW/CSE 371/lab5starter/audio_codec.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab5starter|C:/Users/there/OneDrive - UW/CSE 371/lab5starter/audio_codec.v|
+!i113 1
+R7
+R8
+R9
+vclock_generator
+R1
+!i10b 1
+!s100 39OA<gKn`aijkLgT:8]8i2
+ICJ^i4]R0`U?c5<_P194lA3
+R2
+R0
+R13
+8C:/Users/there/OneDrive - UW/CSE 371/lab5starter/clock_generator.v
+FC:/Users/there/OneDrive - UW/CSE 371/lab5starter/clock_generator.v
+R12
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/there/OneDrive - UW/CSE 371/lab5starter/clock_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab5starter|C:/Users/there/OneDrive - UW/CSE 371/lab5starter/clock_generator.v|
+!i113 1
+R7
+R8
+R9
+vlab5rom
+R1
+!i10b 1
+!s100 7Em08AOS`E``V9[NOcRZ@2
+IMa2P4kDBTUi4>Bg[Kg<kF0
+R2
+R0
+w1677050080
+8C:/Users/there/OneDrive - UW/CSE 371/lab5starter/lab5rom.v
+FC:/Users/there/OneDrive - UW/CSE 371/lab5starter/lab5rom.v
+L0 40
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/there/OneDrive - UW/CSE 371/lab5starter/lab5rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab5starter|C:/Users/there/OneDrive - UW/CSE 371/lab5starter/lab5rom.v|
+!i113 1
+R7
+R8
+R9
+vpart1
+R1
+!i10b 1
+!s100 Q44`5a44VAoiMgKK^GAk93
+IOf5S<iV^;YagB_108[=><2
+R2
+R0
+w1677222272
+8C:/Users/there/OneDrive - UW/CSE 371/lab5starter/part1.v
+FC:/Users/there/OneDrive - UW/CSE 371/lab5starter/part1.v
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1677223228.000000
+!s107 C:/Users/there/OneDrive - UW/CSE 371/lab5starter/part1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab5starter|C:/Users/there/OneDrive - UW/CSE 371/lab5starter/part1.v|
+!i113 1
+R7
+R8
+R9
+vtone_generator
+Z14 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R11
+!i10b 1
+!s100 MST8c?o;fV8EEzJKjKHgn0
+IPHP8o:j`kZmOdgTN`2h[92
+R2
+Z15 !s105 tone_generator_sv_unit
+S1
+R0
+Z16 w1677221874
+Z17 8C:/Users/there/OneDrive - UW/CSE 371/lab5starter/tone_generator.sv
+Z18 FC:/Users/there/OneDrive - UW/CSE 371/lab5starter/tone_generator.sv
+L0 19
+R5
+r1
+!s85 0
+31
+Z19 !s108 1677223230.000000
+Z20 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab5starter/tone_generator.sv|
+Z21 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab5starter|C:/Users/there/OneDrive - UW/CSE 371/lab5starter/tone_generator.sv|
+!i113 1
+Z22 o-sv -work work
+Z23 !s92 -sv -work work {+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab5starter}
+R9
+vtone_generator_testbench
+R14
+R11
+!i10b 1
+!s100 YON<Md[a@6ComQVCaE=JG1
+I<ZULcdK:`KdK3dDj7`2a01
+R2
+R15
+S1
+R0
+R16
+R17
+R18
+L0 56
+R5
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R22
+R23
+R9

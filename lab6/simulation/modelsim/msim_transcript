@@ -1,0 +1,127 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do lab6_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab6 {C:/Users/there/OneDrive - UW/CSE 371/lab6/ram8x16.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:15:27 on Mar 13,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab6" C:/Users/there/OneDrive - UW/CSE 371/lab6/ram8x16.v 
+# -- Compiling module ram8x16
+# 
+# Top level modules:
+# 	ram8x16
+# End time: 23:15:27 on Mar 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab6 {C:/Users/there/OneDrive - UW/CSE 371/lab6/seg7.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:15:27 on Mar 13,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab6" C:/Users/there/OneDrive - UW/CSE 371/lab6/seg7.sv 
+# -- Compiling module seg7
+# -- Compiling module seg7_testbench
+# 
+# Top level modules:
+# 	seg7_testbench
+# End time: 23:15:27 on Mar 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab6 {C:/Users/there/OneDrive - UW/CSE 371/lab6/rh_ctrl.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:15:27 on Mar 13,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab6" C:/Users/there/OneDrive - UW/CSE 371/lab6/rh_ctrl.sv 
+# -- Compiling module rh_ctrl
+# -- Compiling module rh_ctrl_testbench
+# 
+# Top level modules:
+# 	rh_ctrl_testbench
+# End time: 23:15:27 on Mar 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab6 {C:/Users/there/OneDrive - UW/CSE 371/lab6/rh_data.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:15:27 on Mar 13,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab6" C:/Users/there/OneDrive - UW/CSE 371/lab6/rh_data.sv 
+# -- Compiling module rh_data
+# -- Compiling module rh_data_testbench
+# 
+# Top level modules:
+# 	rh_data_testbench
+# End time: 23:15:27 on Mar 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab6 {C:/Users/there/OneDrive - UW/CSE 371/lab6/DE1_SoC.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:15:27 on Mar 13,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab6" C:/Users/there/OneDrive - UW/CSE 371/lab6/DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 23:15:27 on Mar 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab6 {C:/Users/there/OneDrive - UW/CSE 371/lab6/pulse_gen.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:15:27 on Mar 13,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab6" C:/Users/there/OneDrive - UW/CSE 371/lab6/pulse_gen.sv 
+# -- Compiling module pulse_gen
+# -- Compiling module pulse_gen_testbench
+# 
+# Top level modules:
+# 	pulse_gen_testbench
+# End time: 23:15:27 on Mar 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab6 {C:/Users/there/OneDrive - UW/CSE 371/lab6/car_tracking.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:15:27 on Mar 13,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab6" C:/Users/there/OneDrive - UW/CSE 371/lab6/car_tracking.sv 
+# -- Compiling module car_tracking
+# -- Compiling module car_tracking_testbench
+# 
+# Top level modules:
+# 	car_tracking_testbench
+# End time: 23:15:27 on Mar 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim -gui -l msim_transcript work.DE1_SoC_testbench -L altera_mf_ver
+# vsim -gui -l msim_transcript work.DE1_SoC_testbench -L altera_mf_ver 
+# Start time: 23:15:43 on Mar 13,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.seg7
+# Loading work.rh_ctrl
+# Loading work.rh_data
+# Loading work.car_tracking
+# Loading work.ram8x16
+# Loading altera_mf_ver.altsyncram
+# Loading work.pulse_gen
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+add wave -position end  sim:/DE1_SoC_testbench/HEX5
+add wave -position end  sim:/DE1_SoC_testbench/HEX4
+add wave -position end  sim:/DE1_SoC_testbench/HEX3
+add wave -position end  sim:/DE1_SoC_testbench/HEX2
+add wave -position end  sim:/DE1_SoC_testbench/HEX1
+add wave -position end  sim:/DE1_SoC_testbench/HEX0
+add wave -position end  sim:/DE1_SoC_testbench/clk
+add wave -position end  sim:/DE1_SoC_testbench/reset
+add wave -position end  sim:/DE1_SoC_testbench/inc_hour
+add wave -position end  sim:/DE1_SoC_testbench/pp
+add wave -position end  sim:/DE1_SoC_testbench/entr_wait
+add wave -position end  sim:/DE1_SoC_testbench/exit_wait
+add wave -position end  sim:/DE1_SoC_testbench/led_p
+add wave -position end  sim:/DE1_SoC_testbench/led_full
+add wave -position end  sim:/DE1_SoC_testbench/entr_open
+add wave -position end  sim:/DE1_SoC_testbench/exit_open
+run -all
+# ** Note: $stop    : C:/Users/there/OneDrive - UW/CSE 371/lab6/DE1_SoC.sv(315)
+#    Time: 15350 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at C:/Users/there/OneDrive - UW/CSE 371/lab6/DE1_SoC.sv line 315
+# End time: 23:16:19 on Mar 13,2023, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 0

@@ -1,0 +1,23 @@
+module fill_space #(
+	parameter width = 640, height = 480
+	)
+	(
+	output logic [9:0] x
+	,output logic [8:0] y
+	,input logic enable, clk, reset
+	)
+	
+	logic [9:0] x_d;
+	logic [8:0] y_d;
+	
+	
+	
+	always_ff @(posedge clk) begin
+		if (reset) begin
+			x_d <= 0;
+			y_d <= 0;
+		end
+	end
+	
+	
+endmodule  // fill_space

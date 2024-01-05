@@ -1,0 +1,28 @@
+module pulse_gen (
+		output logic pulse
+		,input logic in
+	);
+	
+	typedef enum logic [1:0] { s_wait_rise, s_wait_fall } state;
+	
+	state ps, ns;
+	logic in_reg;
+	
+	always_comb begin
+		ns = ps;
+		
+		case (ps)
+			s_wait_rise: begin
+				if (in_reg) begin
+					ns = s_wait_fall;
+				end
+			end
+			s_wait_fall: begin
+				if (~in_reg) begin
+					ns = s_wait_rise;
+				end
+			end
+		endcase
+	end
+	
+endmodule  // pulse_gen

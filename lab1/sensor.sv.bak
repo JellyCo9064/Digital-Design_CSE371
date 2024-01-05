@@ -1,0 +1,31 @@
+module sensor (
+	output logic enter, exit
+	,input logic a, b, clk
+	);
+
+	typedef enum {s00, s01, s10, s11} state;
+	
+	state ps, ns;
+	
+	always_comb begin
+		
+		ns = {b, a};
+		
+		enter = 1'b0;
+		exit = 1'b0;
+		
+		if (ps == s01 & ns == s11)
+			enter = 1'b1;
+			
+		if (ps == s10 & ns == s11)
+			exit = 1'b1;
+		
+	end
+	
+	always_ff @(posedge clk) begin
+	
+		ps <= ns;
+	
+	end
+	
+endmodule

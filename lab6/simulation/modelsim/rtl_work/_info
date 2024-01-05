@@ -1,0 +1,334 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/there/OneDrive - UW/CSE 371/lab6/simulation/modelsim
+vcar_tracking
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1678774527
+!i10b 1
+!s100 H;AblaD`CmQDV>`8NCHVU2
+I00Qi@lhdCAm=fzkjkzo2I1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 car_tracking_sv_unit
+S1
+R0
+Z5 w1678767622
+Z6 8C:/Users/there/OneDrive - UW/CSE 371/lab6/car_tracking.sv
+Z7 FC:/Users/there/OneDrive - UW/CSE 371/lab6/car_tracking.sv
+L0 21
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1678774527.000000
+Z10 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab6/car_tracking.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab6|C:/Users/there/OneDrive - UW/CSE 371/lab6/car_tracking.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work {+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab6}
+Z14 tCvgOpt 0
+vcar_tracking_testbench
+R1
+R2
+!i10b 1
+!s100 Ld2NE2aZAMT4>hYGW:UmH2
+I8LFnCibR4gnBS@[c9gB4`1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 83
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vDE1_SoC
+R1
+R2
+!i10b 1
+!s100 0Uc>f9IH=@]SHLjG?b4Yn2
+I=IIzJMBDj[kk?`dgdUN^]0
+R3
+Z15 !s105 DE1_SoC_sv_unit
+S1
+R0
+Z16 w1678774345
+Z17 8C:/Users/there/OneDrive - UW/CSE 371/lab6/DE1_SoC.sv
+Z18 FC:/Users/there/OneDrive - UW/CSE 371/lab6/DE1_SoC.sv
+L0 27
+R8
+r1
+!s85 0
+31
+R9
+Z19 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab6/DE1_SoC.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab6|C:/Users/there/OneDrive - UW/CSE 371/lab6/DE1_SoC.sv|
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c
+vDE1_SoC_testbench
+R1
+R2
+!i10b 1
+!s100 ;UWL?ojjNZA`lHTBS@me63
+I=iOTENGSIYjzXn]Q35<830
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 216
+R8
+r1
+!s85 0
+31
+R9
+R19
+R20
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c_testbench
+vpulse_gen
+R1
+R2
+!i10b 1
+!s100 >^i3Hehddaff>^zZW:OV_0
+I;ePe[b19S6XFlH6@Y_<PY0
+R3
+Z21 !s105 pulse_gen_sv_unit
+S1
+R0
+Z22 w1678774512
+Z23 8C:/Users/there/OneDrive - UW/CSE 371/lab6/pulse_gen.sv
+Z24 FC:/Users/there/OneDrive - UW/CSE 371/lab6/pulse_gen.sv
+L0 19
+R8
+r1
+!s85 0
+31
+R9
+Z25 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab6/pulse_gen.sv|
+Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab6|C:/Users/there/OneDrive - UW/CSE 371/lab6/pulse_gen.sv|
+!i113 1
+R12
+R13
+R14
+vpulse_gen_testbench
+R1
+R2
+!i10b 1
+!s100 6662_0Cf@9LNTnzeKjGK=0
+I_5;[ldb`ROVA?l]PdJiCD3
+R3
+R21
+S1
+R0
+R22
+R23
+R24
+L0 72
+R8
+r1
+!s85 0
+31
+R9
+R25
+R26
+!i113 1
+R12
+R13
+R14
+vram8x16
+R2
+!i10b 1
+!s100 V4H:Ph?N7Yfef=_n_PPRY0
+IbLMF<GZP6f;h2E<HL8LQY3
+R3
+R0
+w1678436507
+8C:/Users/there/OneDrive - UW/CSE 371/lab6/ram8x16.v
+FC:/Users/there/OneDrive - UW/CSE 371/lab6/ram8x16.v
+L0 40
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/there/OneDrive - UW/CSE 371/lab6/ram8x16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab6|C:/Users/there/OneDrive - UW/CSE 371/lab6/ram8x16.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab6}
+R14
+vrh_ctrl
+R1
+R2
+!i10b 1
+!s100 iXkm2h=o`mgg1Q`J?YY^c2
+IXD]`_gEfFNFXKbQ:fmW9B0
+R3
+Z27 !s105 rh_ctrl_sv_unit
+S1
+R0
+Z28 w1678767868
+Z29 8C:/Users/there/OneDrive - UW/CSE 371/lab6/rh_ctrl.sv
+Z30 FC:/Users/there/OneDrive - UW/CSE 371/lab6/rh_ctrl.sv
+L0 23
+R8
+r1
+!s85 0
+31
+R9
+Z31 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab6/rh_ctrl.sv|
+Z32 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab6|C:/Users/there/OneDrive - UW/CSE 371/lab6/rh_ctrl.sv|
+!i113 1
+R12
+R13
+R14
+vrh_ctrl_testbench
+R1
+R2
+!i10b 1
+!s100 l14==5>4bmK?]KZISidZn3
+I8n:5Zd5o=?5j@e:B29f>81
+R3
+R27
+S1
+R0
+R28
+R29
+R30
+L0 119
+R8
+r1
+!s85 0
+31
+R9
+R31
+R32
+!i113 1
+R12
+R13
+R14
+vrh_data
+R1
+R2
+!i10b 1
+!s100 `MobD5jgeYO:bJCYO>K?m2
+Ib9<Omg3=>>0a^e?S<7C3i3
+R3
+Z33 !s105 rh_data_sv_unit
+S1
+R0
+Z34 w1678767990
+Z35 8C:/Users/there/OneDrive - UW/CSE 371/lab6/rh_data.sv
+Z36 FC:/Users/there/OneDrive - UW/CSE 371/lab6/rh_data.sv
+L0 24
+R8
+r1
+!s85 0
+31
+R9
+Z37 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab6/rh_data.sv|
+Z38 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab6|C:/Users/there/OneDrive - UW/CSE 371/lab6/rh_data.sv|
+!i113 1
+R12
+R13
+R14
+vrh_data_testbench
+R1
+R2
+!i10b 1
+!s100 RC7fEKl?c=F6i=NfV[dX01
+IBS^OYEe9G0G91i>YT^dnV3
+R3
+R33
+S1
+R0
+R34
+R35
+R36
+L0 55
+R8
+r1
+!s85 0
+31
+R9
+R37
+R38
+!i113 1
+R12
+R13
+R14
+vseg7
+R1
+R2
+!i10b 1
+!s100 _96X>g0YJ0G2<TcoL6JiI1
+Io<7dnYG5^R1]Z4T<Kjn]J0
+R3
+Z39 !s105 seg7_sv_unit
+S1
+R0
+Z40 w1678768010
+Z41 8C:/Users/there/OneDrive - UW/CSE 371/lab6/seg7.sv
+Z42 FC:/Users/there/OneDrive - UW/CSE 371/lab6/seg7.sv
+L0 17
+R8
+r1
+!s85 0
+31
+R9
+Z43 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab6/seg7.sv|
+Z44 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab6|C:/Users/there/OneDrive - UW/CSE 371/lab6/seg7.sv|
+!i113 1
+R12
+R13
+R14
+vseg7_testbench
+R1
+R2
+!i10b 1
+!s100 N`8[9@60K:WYa^<VEDz^H1
+I7FQ0PZd7DdBh2IHnGF4a10
+R3
+R39
+S1
+R0
+R40
+R41
+R42
+L0 52
+R8
+r1
+!s85 0
+31
+R9
+R43
+R44
+!i113 1
+R12
+R13
+R14

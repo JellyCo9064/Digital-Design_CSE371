@@ -1,0 +1,140 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do lab4_task1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab4_task1 {C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/DE1_SoC_task1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:08:44 on Feb 12,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab4_task1" C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/DE1_SoC_task1.sv 
+# -- Compiling module DE1_SoC_task1
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 22:08:44 on Feb 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab4_task1 {C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/double_seg7.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:08:44 on Feb 12,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab4_task1" C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/double_seg7.sv 
+# -- Compiling module double_seg7
+# -- Compiling module double_seg7_testbench
+# 
+# Top level modules:
+# 	double_seg7_testbench
+# End time: 22:08:44 on Feb 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab4_task1 {C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bit_counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:08:44 on Feb 12,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab4_task1" C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bit_counter.sv 
+# -- Compiling module bit_counter
+# -- Compiling module bit_counter_testbench
+# 
+# Top level modules:
+# 	bit_counter_testbench
+# End time: 22:08:44 on Feb 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab4_task1 {C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bc_data.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:08:44 on Feb 12,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab4_task1" C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bc_data.sv 
+# -- Compiling module bc_data
+# -- Compiling module bc_data_testbench
+# 
+# Top level modules:
+# 	bc_data_testbench
+# End time: 22:08:45 on Feb 12,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab4_task1 {C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bc_ctrl.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:08:45 on Feb 12,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab4_task1" C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bc_ctrl.sv 
+# -- Compiling module bc_ctrl
+# -- Compiling module bc_ctrl_testbench
+# 
+# Top level modules:
+# 	bc_ctrl_testbench
+# End time: 22:08:45 on Feb 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim -gui -l msim_transcript work.bc_data_testbench -Lf altera_mf_ver
+# vsim -gui -l msim_transcript work.bc_data_testbench -Lf altera_mf_ver 
+# Start time: 22:08:57 on Feb 12,2023
+# Loading sv_std.std
+# Loading work.bc_data_testbench
+# Loading work.bc_data
+add wave -position end  sim:/bc_data_testbench/done
+add wave -position end  sim:/bc_data_testbench/load_A
+add wave -position end  sim:/bc_data_testbench/rs_A
+add wave -position end  sim:/bc_data_testbench/clk
+add wave -position end  sim:/bc_data_testbench/count
+add wave -position end  sim:/bc_data_testbench/a_in
+run -all
+# ** Note: $stop    : C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bc_data.sv(65)
+#    Time: 3950 ps  Iteration: 1  Instance: /bc_data_testbench
+# Break in Module bc_data_testbench at C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bc_data.sv line 65
+vsim -gui -l msim_transcript -Lf altera_mf_ver work.bit_counter_testbench
+# End time: 22:11:20 on Feb 12,2023, Elapsed time: 0:02:23
+# Errors: 0, Warnings: 0
+# vsim -gui -l msim_transcript -Lf altera_mf_ver work.bit_counter_testbench 
+# Start time: 22:11:20 on Feb 12,2023
+# Loading sv_std.std
+# Loading work.bit_counter_testbench
+# Loading work.bit_counter
+# Loading work.bc_ctrl
+# Loading work.bc_data
+add wave -position end  sim:/bit_counter_testbench/result
+add wave -position end  sim:/bit_counter_testbench/done
+add wave -position end  sim:/bit_counter_testbench/num
+add wave -position end  sim:/bit_counter_testbench/start
+add wave -position end  sim:/bit_counter_testbench/clk
+add wave -position end  sim:/bit_counter_testbench/reset
+run -all
+# ** Note: $stop    : C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bit_counter.sv(72)
+#    Time: 3350 ps  Iteration: 1  Instance: /bit_counter_testbench
+# Break in Module bit_counter_testbench at C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/bit_counter.sv line 72
+vsim -gui -l msim_transcript -Lf altera_mf_ver work.DE1_SoC_testbench
+# End time: 22:12:14 on Feb 12,2023, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 0
+# vsim -gui -l msim_transcript -Lf altera_mf_ver work.DE1_SoC_testbench 
+# Start time: 22:12:14 on Feb 12,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC_task1
+# Loading work.bit_counter
+# Loading work.bc_ctrl
+# Loading work.bc_data
+# Loading work.double_seg7
+add wave -position end  sim:/DE1_SoC_testbench/HEX0
+add wave -position end  sim:/DE1_SoC_testbench/SW[9]
+add wave -position end  sim:/DE1_SoC_testbench/SW[7]
+add wave -position end  sim:/DE1_SoC_testbench/SW[6]
+add wave -position end  sim:/DE1_SoC_testbench/SW[5]
+add wave -position end  sim:/DE1_SoC_testbench/SW[4]
+add wave -position end  sim:/DE1_SoC_testbench/SW[3]
+add wave -position end  sim:/DE1_SoC_testbench/SW[2]
+add wave -position end  sim:/DE1_SoC_testbench/SW[1]
+add wave -position end  sim:/DE1_SoC_testbench/SW[0]
+add wave -position end  sim:/DE1_SoC_testbench/clk
+add wave -position end  sim:/DE1_SoC_testbench/num
+run -all
+# ** Note: $stop    : C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/DE1_SoC_task1.sv(101)
+#    Time: 2850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/DE1_SoC_task1.sv line 101
+add wave -position 3  sim:/DE1_SoC_testbench/LEDR[9]
+restart -f
+run -all
+# ** Note: $stop    : C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/DE1_SoC_task1.sv(101)
+#    Time: 2850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at C:/Users/there/OneDrive - UW/CSE 371/lab4_task1/DE1_SoC_task1.sv line 101
+# End time: 22:14:06 on Feb 12,2023, Elapsed time: 0:01:52
+# Errors: 0, Warnings: 0

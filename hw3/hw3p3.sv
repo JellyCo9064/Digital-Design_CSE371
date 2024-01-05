@@ -1,0 +1,95 @@
+/* Arbitrary ASM chart implementation to examine output timings */
+module hw3p3 (
+	output logic Ya, Yb, Yc, Z1, Z2
+	,input logic clk, reset, X
+	);
+	
+	typedef enum logic[1:0] { s0, s1, s2 } state;
+
+	state ps, ns;
+
+	always_comb begin
+
+		case (ps)
+			s0: begin
+				{Yc, Yb, Ya} = 3'b001;
+				{Z2, Z1} = 2'b0;
+				if (X) begin
+					ns = s1;
+				end else begin
+					ns = s0;
+				end
+			end
+
+			s1: begin
+				{Yc, Yb, Ya} = 3'b010;
+				{Z2, Z1} = 2'b0;
+				if (X) begin
+					ns = s2;
+				end else begin
+					ns = s0;
+				end
+			end
+
+			s2: begin
+				{Yc, Yb, Ya} = 3'b100;
+				if (X) begin
+					{Z2, Z1} = 2'b10;
+					ns = s2;
+				end else begin
+					{Z2, Z1} = 2'b01;
+					ns = s0;
+				end
+			end
+			default: begin
+				{Yc, Yb, Ya, Z2, Z1, ns} = 'x;
+			end
+		endcase
+	end
+
+	always_ff @(posedge clk) begin
+		if (reset) begin
+			ps <= s0;
+		end else begin
+			ps <= ns;
+		end
+	end
+
+endmodule  // hw3p3
+
+
+/* Testbench for Homework 3 Problem 3 */
+module hw3p3_testbench ();
+	
+	logic Ya, Yb, Yc, Z1, Z2;
+	logic clk, reset, X;
+	
+	parameter CLOCK_PERIOD = 100;
+	initial begin
+		clk <= 1'b0;
+		forever #(CLOCK_PERIOD  / 2) clk <= ~clk;
+	end
+
+	hw3p3 dut (.*);
+	
+	initial begin
+		
+		@(posedge clk) reset <= 1'b1; X <= 1'b0;
+
+		@(posedge clk) reset <= 1'b0; X <= 1'b1;
+		@(posedge clk);
+		@(posedge clk);
+		@(posedge clk);
+		@(posedge clk);
+		@(posedge clk); X <= 1'b0;
+		@(posedge clk); 
+		@(posedge clk);
+		@(posedge clk); X <= 1'b1;
+		@(posedge clk); X <= 1'b0;
+		@(posedge clk);
+		@(posedge clk);
+		
+		$stop;
+	end  // initial
+	
+endmodule  // hw3p3_testbench

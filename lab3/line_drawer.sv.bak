@@ -1,0 +1,150 @@
+
+module line_drawer(
+	input logic clk, reset,
+	
+	// x and y coordinates for the start and end points of the line
+	input logic [9:0]	x0, x1, 
+	input logic [8:0] y0, y1,
+
+	//outputs cooresponding to the coordinate pair (x, y)
+	output logic [9:0] x,
+	output logic [8:0] y 
+	);
+	
+	/*
+	 * You'll need to create some registers to keep track of things
+	 * such as error and direction
+	 * Example: */
+	logic signed [11:0] error, n_error;
+
+	logic is_steep;
+	logic signed [9:0] x_min, x_max, y_start,  y_end;
+	logic signed [9:0] x0_r, x1_r, y0_r, y1_r;
+	logic signed [10:0] delta_x;
+	logic [10:0] delta_y;
+	logic signed [9:0] step;
+
+	logic signed [9:0] px, py, nx, ny;
+
+	always_comb begin
+
+		is_steep = (y1 - y0 < 0 ? -(y1 - y0) : y1 - y0) > (x1 - x0 < 0 ? -(x1 - x0) : x1 - x0);
+
+		if (is_steep == 1) begin
+			x0_r = y0;
+			y0_r = x0;
+			x1_r = y1;
+			y1_r = x1;
+		end else begin
+			x0_r = x0;
+			x1_r = x1;
+			y0_r = y0;
+			y1_r = y1;
+		end
+
+		if (x0_r > x1_r) begin
+			x_min = x1_r;
+			x_max = x0_r;
+			y_start = y1_r;
+			y_end = y0_r;
+		end else begin
+			x_min = x0_r;
+			x_max = x1_r;
+			y_start = y0_r;
+			y_end = y1_r;
+		end
+
+		delta_x = x1_r - x0_r;
+		delta_y = (y1_r - y0_r < 0 ? -(y1_r - y0_r) : y1_r - y0_r);
+		error = -(delta_x / 2);
+
+		if (y_start < y_end) step = 1;
+		else 			     step = -1;
+
+		error += delta_y;
+
+		if (p_error >= 0) begin
+			ny = py + step;
+			n_error = p_error - delta_x;
+		end else begin
+			ny = py;
+			n_error = error;
+		end
+
+		nx = px + step;
+	end
+
+	assign x = px;
+	assign y = py;
+
+	always_ff @(posedge clk) begin
+		if (reset) begin
+			px = x_min;
+			py = y_start;
+			p_error = error;
+		end else if (is_steep) begin
+			px <= ny;
+			py <= nx;
+			p_error <= n_error;
+		end else begin
+			px <= nx;
+			py <= ny;
+			p_error <= n_error;
+		end
+
+	end
+     
+endmodule  // line_drawer
+
+module line_drawer_testbench();
+
+	logic clk, reset;
+	
+	logic [9:0]	x0, x1;
+	logic [8:0] y0, y1;
+
+	logic [9:0] x;
+	logic [8:0] y;
+
+	line_drawer dut (.*);
+
+	parameter CLOCK_PERIOD = 100;
+	initial begin
+		clk <= 0;
+		forever #(CLOCK_PERIOD  / 2) clk <= ~clk;
+	end
+
+	initial begin
+		integer i;
+
+		@(posedge clk) reset <= 0; x0 <= 0; y0 <= 0; x1 <= 0; y1 <= 0;
+
+		@(posedge clk) x0 <= 0; y0 <= 0; x1 <= 10; y1 <= 0;
+		for (i = 0; i < 20; i++) begin
+			@(posedge clk);
+		end
+
+		@(posedge clk) x0 <= 0; y0 <= 0; x1 <= 5; y1 <= 0;
+		for (i = 0; i < 20; i++) begin
+			@(posedge clk);
+		end
+
+		@(posedge clk) x0 <= 0; y0 <= 0; x1 <= 5; y1 <= 5;
+		for (i = 0; i < 20; i++) begin
+			@(posedge clk);
+		end
+
+		@(posedge clk) x0 <= 0; y0 <= 0; x1 <= 10; y1 <= 2;
+		for (i = 0; i < 20; i++) begin
+			@(posedge clk);
+		end
+
+		@(posedge clk) x0 <= 0; y0 <= 0; x1 <= 2; y1 <= 10;
+		for (i = 0; i < 20; i++) begin
+			@(posedge clk);
+		end
+
+		$stop;
+	end
+
+endmodule

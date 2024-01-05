@@ -1,0 +1,106 @@
+
+
+module FIFO_Control #(
+							 parameter width = 4
+							 )(
+								input logic clk, reset,
+								input logic read, write,
+							  output logic wr_en, rd_en,
+							  output logic empty, full,
+							  output logic [width-1:0] readAddr, writeAddr
+							  );
+	
+	
+	logic empty_ns, full_ns;
+	logic [width-1:0] readAddr_ns, writeAddr_ns;
+	
+	logic readEquality, writeEquality;
+	logic equality;
+	
+	assign readEquality  =  readAddr_ns == writeAddr;
+	assign writeEquality = writeAddr_ns ==  readAddr;
+	
+	assign equality = readEquality | writeEquality;
+	
+	// FSM Assignments
+	always_comb begin
+		case({empty, full})
+			2'b00: begin // If neither empty nor full
+						if(read & write)
+							{empty_ns, full_ns} = 2'b00;
+						else if(write & equality)
+							{empty_ns, full_ns} = 2'b01;
+						else if(read & equality)
+							{empty_ns, full_ns} = 2'b10;
+						else
+							{empty_ns, full_ns} = 2'b00;
+					 end
+			2'b01: begin // If not empty but full
+						if(read & ~(write))
+							{empty_ns, full_ns} = 2'b00;
+						else
+							{empty_ns, full_ns} = 2'b01;
+					 end
+			2'b10: begin // If not full but empty
+						if((~read) & write)
+							{empty_ns, full_ns} = 2'b00;
+						else
+							{empty_ns, full_ns} = 2'b10;
+					 end
+		 default: {empty_ns, full_ns} = 2'b11;
+		endcase
+	end
+	
+	// Read/Write Management
+	always_comb begin
+		case({read, write})
+			2'b00: begin  // No read or write asserted
+						readAddr_ns  = readAddr;
+						writeAddr_ns = writeAddr;
+					 end
+			2'b01: begin // Write asserted
+						readAddr_ns  = readAddr;
+						if(~full)
+							writeAddr_ns = writeAddr + 1'b1;
+						else
+							writeAddr_ns = writeAddr;
+					 end
+			2'b10: begin // Read asserted
+						writeAddr_ns = writeAddr;
+						if(~empty)
+							readAddr_ns = readAddr + 1'b1;
+						else
+							readAddr_ns = readAddr;
+					 end				
+			2'b11: begin // Read & Write asserted
+						if(~empty)
+							readAddr_ns = readAddr + 1'b1;
+						else
+							readAddr_ns = readAddr;
+						if(~full)
+							writeAddr_ns = writeAddr + 1'b1;
+						else
+							writeAddr_ns = writeAddr;
+					 end
+		endcase
+	end
+	
+	
+	assign wr_en = ~full  & write;
+	assign rd_en = ~empty &  read;
+	
+	always_ff @(posedge clk) begin
+		if(reset) begin
+			 readAddr <= '0;
+			writeAddr <= '0;
+				 empty <= 1'b1;
+				  full <= 1'b0;
+		end else begin
+			 readAddr <=  readAddr_ns;
+			writeAddr <= writeAddr_ns;
+				 empty <= empty_ns;
+				  full <=  full_ns;
+		end
+	end
+
+endmodule 

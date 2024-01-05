@@ -1,0 +1,115 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do lab4_task2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab4_task2 {C:/Users/there/OneDrive - UW/CSE 371/lab4_task2/ram32x8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:26:29 on Feb 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab4_task2" C:/Users/there/OneDrive - UW/CSE 371/lab4_task2/ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 22:26:29 on Feb 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab4_task2 {C:/Users/there/OneDrive - UW/CSE 371/lab4_task2/DE1_SoC_task2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:26:29 on Feb 12,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab4_task2" C:/Users/there/OneDrive - UW/CSE 371/lab4_task2/DE1_SoC_task2.sv 
+# -- Compiling module DE1_SoC_task2
+# -- Compiling module DE1_SoC_task2_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_task2_testbench
+# End time: 22:26:29 on Feb 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab4_task2 {C:/Users/there/OneDrive - UW/CSE 371/lab4_task2/double_seg7.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:26:29 on Feb 12,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab4_task2" C:/Users/there/OneDrive - UW/CSE 371/lab4_task2/double_seg7.sv 
+# -- Compiling module double_seg7
+# -- Compiling module double_seg7_testbench
+# 
+# Top level modules:
+# 	double_seg7_testbench
+# End time: 22:26:29 on Feb 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab4_task2 {C:/Users/there/OneDrive - UW/CSE 371/lab4_task2/bs_data.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:26:29 on Feb 12,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab4_task2" C:/Users/there/OneDrive - UW/CSE 371/lab4_task2/bs_data.sv 
+# -- Compiling module bs_data
+# -- Compiling module bs_data_testbench
+# 
+# Top level modules:
+# 	bs_data_testbench
+# End time: 22:26:29 on Feb 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab4_task2 {C:/Users/there/OneDrive - UW/CSE 371/lab4_task2/bs_ctrl.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:26:29 on Feb 12,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab4_task2" C:/Users/there/OneDrive - UW/CSE 371/lab4_task2/bs_ctrl.sv 
+# -- Compiling module bs_ctrl
+# -- Compiling module bs_ctrl_testbench
+# 
+# Top level modules:
+# 	bs_ctrl_testbench
+# End time: 22:26:29 on Feb 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab4_task2 {C:/Users/there/OneDrive - UW/CSE 371/lab4_task2/binary_search.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:26:29 on Feb 12,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab4_task2" C:/Users/there/OneDrive - UW/CSE 371/lab4_task2/binary_search.sv 
+# -- Compiling module binary_search
+# -- Compiling module binary_search_testbench
+# 
+# Top level modules:
+# 	binary_search_testbench
+# End time: 22:26:29 on Feb 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim -gui -l msim_transcript work.DE1_SoC_task2_testbench -Lf altera_mf_ver
+# vsim -gui -l msim_transcript work.DE1_SoC_task2_testbench -Lf altera_mf_ver 
+# Start time: 22:26:48 on Feb 12,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_task2_testbench
+# Loading work.DE1_SoC_task2
+# Loading work.double_seg7
+# Loading work.binary_search
+# Loading work.bs_ctrl
+# Loading work.bs_data
+# Loading work.ram32x8
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) C:/Users/there/OneDrive - UW/CSE 371/lab4_task2/DE1_SoC_task2.sv(18): [PCDPC] - Port size (5) does not match connection size (8) for port 'index'. The port definition is at: C:/Users/there/OneDrive - UW/CSE 371/lab4_task2/binary_search.sv(26).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_task2_testbench/dut/bs File: C:/Users/there/OneDrive - UW/CSE 371/lab4_task2/binary_search.sv
+add wave -position end  sim:/DE1_SoC_task2_testbench/HEX0
+add wave -position end  sim:/DE1_SoC_task2_testbench/HEX1
+add wave -position end  sim:/DE1_SoC_task2_testbench/LEDR[9]
+add wave -position end  sim:/DE1_SoC_task2_testbench/LEDR[8]
+add wave -position end  sim:/DE1_SoC_task2_testbench/SW[7]
+add wave -position end  sim:/DE1_SoC_task2_testbench/SW[6]
+add wave -position end  sim:/DE1_SoC_task2_testbench/SW[5]
+add wave -position end  sim:/DE1_SoC_task2_testbench/SW[4]
+add wave -position end  sim:/DE1_SoC_task2_testbench/SW[3]
+add wave -position end  sim:/DE1_SoC_task2_testbench/SW[2]
+add wave -position end  sim:/DE1_SoC_task2_testbench/SW[1]
+add wave -position end  sim:/DE1_SoC_task2_testbench/SW[0]
+add wave -position end  sim:/DE1_SoC_task2_testbench/KEY[0]
+add wave -position end  sim:/DE1_SoC_task2_testbench/clk
+run -all
+# ** Note: $stop    : C:/Users/there/OneDrive - UW/CSE 371/lab4_task2/DE1_SoC_task2.sv(70)
+#    Time: 3850 ps  Iteration: 1  Instance: /DE1_SoC_task2_testbench
+# Break in Module DE1_SoC_task2_testbench at C:/Users/there/OneDrive - UW/CSE 371/lab4_task2/DE1_SoC_task2.sv line 70
+# End time: 22:28:21 on Feb 12,2023, Elapsed time: 0:01:33
+# Errors: 0, Warnings: 1

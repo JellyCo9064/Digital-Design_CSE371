@@ -1,0 +1,62 @@
+module bs_ctrl (
+    output logic reset_IS, load_T, try_S
+    ,input logic start, found, not_found, clk, reset
+    );
+
+    typedef logic [1:0] { s_start, s_load, s_search, s_done } state;
+
+    state ps, ns;
+
+    logic start_reg;
+
+    always_comb begin
+        case (ps)
+
+            s_start: begin
+                if (start_reg) begin
+                    ns = s_load;
+                end else begin
+                    ns = s_start;
+                end
+            end
+
+            s_load: begin
+                ns = s_search;
+            end
+
+            s_search: begin
+                if (found | not_found) begin
+                    ns = s_done;
+                end else begin
+                    ns = s_load;
+                end
+            end
+
+            s_done: begin
+                if (!start_reg) begin
+                    ns = s_start;
+                end else begin
+                    ns = s_done;
+                end
+            end
+
+        endcase
+
+        reset_IS = (ps == s_start);
+
+        load_T = (ps == s_load);
+
+        try_S = (ps == s_search);
+    end
+
+    always_ff @(posedge clk) begin
+        if (reset) begin
+            ps <= s_load;
+        end else begin
+            ps <= ns;
+        end
+
+        start_reg <= start;
+    end
+
+endmodule  // bs_ctrl

@@ -1,0 +1,12 @@
+
+State Machine - |DE1_SoC|pulse_gen:gen_cars|ps
+Name ps~3 ps~2 
+ps.s_wait_rise 0 0 
+ps.s_pulse 0 1 
+ps.s_wait_fall 1 0 
+
+State Machine - |DE1_SoC|pulse_gen:gen_hour|ps
+Name ps~3 ps~2 
+ps.s_wait_rise 0 0 
+ps.s_pulse 0 1 
+ps.s_wait_fall 1 0 

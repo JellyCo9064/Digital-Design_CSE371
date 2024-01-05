@@ -1,0 +1,44 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do hw3_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/hw3 {C:/Users/there/OneDrive - UW/CSE 371/hw3/hw3p3.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:09:17 on Feb 08,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/hw3" C:/Users/there/OneDrive - UW/CSE 371/hw3/hw3p3.sv 
+# -- Compiling module hw3p3
+# -- Compiling module hw3p3_testbench
+# 
+# Top level modules:
+# 	hw3p3_testbench
+# End time: 13:09:17 on Feb 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.hw3p3_testbench
+# vsim work.hw3p3_testbench 
+# Start time: 13:09:23 on Feb 08,2023
+# Loading sv_std.std
+# Loading work.hw3p3_testbench
+# Loading work.hw3p3
+add wave -position end  sim:/hw3p3_testbench/Ya
+add wave -position end  sim:/hw3p3_testbench/Yb
+add wave -position end  sim:/hw3p3_testbench/Yc
+add wave -position end  sim:/hw3p3_testbench/Z1
+add wave -position end  sim:/hw3p3_testbench/Z2
+add wave -position end  sim:/hw3p3_testbench/clk
+add wave -position end  sim:/hw3p3_testbench/reset
+add wave -position end  sim:/hw3p3_testbench/X
+run -all
+# ** Note: $stop    : C:/Users/there/OneDrive - UW/CSE 371/hw3/hw3p3.sv(92)
+#    Time: 1250 ps  Iteration: 1  Instance: /hw3p3_testbench
+# Break in Module hw3p3_testbench at C:/Users/there/OneDrive - UW/CSE 371/hw3/hw3p3.sv line 92
+# End time: 13:11:53 on Feb 08,2023, Elapsed time: 0:02:30
+# Errors: 0, Warnings: 0

@@ -1,0 +1,16 @@
+|hw3p3
+Ya <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+Yb <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+Yc <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
+Z1 <= Z1.DB_MAX_OUTPUT_PORT_TYPE
+Z2 <= Z2.DB_MAX_OUTPUT_PORT_TYPE
+clk => ps[0].CLK
+clk => ps[1].CLK
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+X => ns[0].DATAB
+X => Z2.DATAB
+X => Selector0.IN3
+X => Z1.DATAB
+
+

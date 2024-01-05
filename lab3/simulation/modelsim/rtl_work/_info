@@ -1,0 +1,288 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/there/OneDrive - UW/CSE 371/lab3/simulation/modelsim
+vanimator
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1675408242
+!i10b 1
+!s100 MO<:Bd5:j4fDnZ;km[0[X3
+I5zO]8`SiRinb:F[9=A[@[3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 animator_sv_unit
+S1
+R0
+Z5 w1675116895
+Z6 8C:/Users/there/OneDrive - UW/CSE 371/lab3/animator.sv
+Z7 FC:/Users/there/OneDrive - UW/CSE 371/lab3/animator.sv
+L0 23
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1675408242.000000
+Z10 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab3/animator.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab3|C:/Users/there/OneDrive - UW/CSE 371/lab3/animator.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work {+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab3}
+Z14 tCvgOpt 0
+vanimator_testbench
+R1
+R2
+!i10b 1
+!s100 HI[m6e2M5RobD_JLIKFYR1
+I:f7^OG6BKP6dZQM?1m_T01
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 105
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vcounter_32b
+R1
+R2
+!i10b 1
+!s100 a6;koQ7RlHT6^oP793H<^3
+I:MeC;oPDZAB[N2ba^anF^0
+R3
+Z15 !s105 counter_32b_sv_unit
+S1
+R0
+Z16 w1675387453
+Z17 8C:/Users/there/OneDrive - UW/CSE 371/lab3/counter_32b.sv
+Z18 FC:/Users/there/OneDrive - UW/CSE 371/lab3/counter_32b.sv
+L0 20
+R8
+r1
+!s85 0
+31
+R9
+Z19 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab3/counter_32b.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab3|C:/Users/there/OneDrive - UW/CSE 371/lab3/counter_32b.sv|
+!i113 1
+R12
+R13
+R14
+vcounter_32b_testbench
+R1
+R2
+!i10b 1
+!s100 Q]ll3ZF[]dKhd@BY4HnG71
+I?df@2APcFGgScgV6TAFfd2
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 40
+R8
+r1
+!s85 0
+31
+R9
+R19
+R20
+!i113 1
+R12
+R13
+R14
+vDE1_SoC
+R1
+R2
+!i10b 1
+!s100 gJ54ml6T`e30KL0UUG:Ja2
+Ibge9[YbVC6[m<6V@8JYZf3
+R3
+Z21 !s105 DE1_SoC_sv_unit
+S1
+R0
+Z22 w1675408197
+Z23 8C:/Users/there/OneDrive - UW/CSE 371/lab3/DE1_SoC.sv
+Z24 FC:/Users/there/OneDrive - UW/CSE 371/lab3/DE1_SoC.sv
+L0 33
+R8
+r1
+!s85 0
+31
+R9
+Z25 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab3/DE1_SoC.sv|
+Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab3|C:/Users/there/OneDrive - UW/CSE 371/lab3/DE1_SoC.sv|
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c
+vDE1_SoC_testbench
+R1
+R2
+!i10b 1
+!s100 I@>eX1??;AnZRg^nP7hiJ2
+I^k1gTXZlgGEk;Z:z1EPa20
+R3
+R21
+S1
+R0
+R22
+R23
+R24
+L0 210
+R8
+r1
+!s85 0
+31
+R9
+R25
+R26
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c_testbench
+vfill_space
+R1
+R2
+!i10b 1
+!s100 ESU:1VNgGd42i55>bbW6[0
+IJoM`7d_Y=l2T7XLzWC58f3
+R3
+Z27 !s105 fill_space_sv_unit
+S1
+R0
+Z28 w1675117010
+Z29 8C:/Users/there/OneDrive - UW/CSE 371/lab3/fill_space.sv
+Z30 FC:/Users/there/OneDrive - UW/CSE 371/lab3/fill_space.sv
+L0 21
+R8
+r1
+!s85 0
+31
+R9
+Z31 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab3/fill_space.sv|
+Z32 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab3|C:/Users/there/OneDrive - UW/CSE 371/lab3/fill_space.sv|
+!i113 1
+R12
+R13
+R14
+vfill_space_testbench
+R1
+R2
+!i10b 1
+!s100 fVN9CPTj4[1USb`HI1`z10
+IT2T2=Gg0Uh7P9B2UjAo]L3
+R3
+R27
+S1
+R0
+R28
+R29
+R30
+L0 67
+R8
+r1
+!s85 0
+31
+R9
+R31
+R32
+!i113 1
+R12
+R13
+R14
+vline_drawer
+R1
+R2
+!i10b 1
+!s100 UMH5cIA@na@`aGKH4g85K2
+I7o=LSik9zJd=S8UHnhQ`;2
+R3
+Z33 !s105 line_drawer_sv_unit
+S1
+R0
+Z34 w1675386636
+Z35 8C:/Users/there/OneDrive - UW/CSE 371/lab3/line_drawer.sv
+Z36 FC:/Users/there/OneDrive - UW/CSE 371/lab3/line_drawer.sv
+L0 24
+R8
+r1
+!s85 0
+31
+R9
+Z37 !s107 C:/Users/there/OneDrive - UW/CSE 371/lab3/line_drawer.sv|
+Z38 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab3|C:/Users/there/OneDrive - UW/CSE 371/lab3/line_drawer.sv|
+!i113 1
+R12
+R13
+R14
+vline_drawer_testbench
+R1
+R2
+!i10b 1
+!s100 H>D5_IUNdTX1Phn`:TkNA3
+Inz2<:B:H<L_P`i<R>XYcY3
+R3
+R33
+S1
+R0
+R34
+R35
+R36
+L0 148
+R8
+r1
+!s85 0
+31
+R9
+R37
+R38
+!i113 1
+R12
+R13
+R14
+vVGA_framebuffer
+R1
+R2
+!i10b 1
+!s100 `6A`P2RPlQ@7gHH_0b8;_1
+I16F;mSf[W6HJE^79Z?8TC1
+R3
+!s105 VGA_framebuffer_sv_unit
+S1
+R0
+w1674612855
+8C:/Users/there/OneDrive - UW/CSE 371/lab3/VGA_framebuffer.sv
+FC:/Users/there/OneDrive - UW/CSE 371/lab3/VGA_framebuffer.sv
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/there/OneDrive - UW/CSE 371/lab3/VGA_framebuffer.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab3|C:/Users/there/OneDrive - UW/CSE 371/lab3/VGA_framebuffer.sv|
+!i113 1
+R12
+R13
+R14
+n@v@g@a_framebuffer

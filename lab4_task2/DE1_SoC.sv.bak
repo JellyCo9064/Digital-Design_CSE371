@@ -1,0 +1,27 @@
+module DE1_SoC (
+    output logic [6:0] HEX0, HEX1
+    ,output logic [9:0] LEDR
+    ,input logic [9:0] SW
+    ,input logic [3:0] KEY
+    ,input logic CLOCK_50
+    );
+
+    double_seg7 addr (
+         ,.HEX0(HEX0)
+         ,.HEX1(HEX1)
+         ,.num(index)
+    );
+
+    logic [7:0] index;
+    binary_search bs (
+         .index(index)
+        ,.found(LEDR[9])
+        ,.not_found(LEDR[8])
+        ,.num(SW[7:0])
+        ,.start(SW[9])
+        ,.clk(CLOCK_50)
+        ,.reset(~KEY[0])
+    );
+
+
+endmodule  // DE1_SoC

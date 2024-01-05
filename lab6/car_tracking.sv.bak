@@ -1,0 +1,11 @@
+module car_tracking (
+		output logic [15:0] curr_num
+		,output logic [2:0] curr_hour
+		,input logic [15:0] wr_num
+		,input logic [2:0] wr_hour
+		,input logic clk, reset
+	);
+	
+	
+	
+endmodule  // car_tracking

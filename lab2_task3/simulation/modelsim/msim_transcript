@@ -1,0 +1,126 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do FIFO_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab2_task3 {C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/ram16x8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:07:38 on Jan 19,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab2_task3" C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/ram16x8.v 
+# -- Compiling module ram16x8
+# 
+# Top level modules:
+# 	ram16x8
+# End time: 23:07:38 on Jan 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab2_task3 {C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/fiveb_counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:07:38 on Jan 19,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab2_task3" C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/fiveb_counter.sv 
+# -- Compiling module fiveb_counter
+# -- Compiling module fiveb_counter_testbench
+# 
+# Top level modules:
+# 	fiveb_counter_testbench
+# End time: 23:07:38 on Jan 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab2_task3 {C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/double_seg7.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:07:38 on Jan 19,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab2_task3" C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/double_seg7.sv 
+# -- Compiling module double_seg7
+# -- Compiling module double_seg7_testbench
+# 
+# Top level modules:
+# 	double_seg7_testbench
+# End time: 23:07:38 on Jan 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab2_task3 {C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/lab2_task3.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:07:38 on Jan 19,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab2_task3" C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/lab2_task3.sv 
+# -- Compiling module lab2_task3
+# -- Compiling module clock_divider
+# -- Compiling module lab2_task3_testbench
+# 
+# Top level modules:
+# 	clock_divider
+# 	lab2_task3_testbench
+# End time: 23:07:38 on Jan 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab2_task3 {C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/FIFO_Control.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:07:38 on Jan 19,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab2_task3" C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/FIFO_Control.sv 
+# -- Compiling module FIFO_Control
+# -- Compiling module FIFO_Control_testbench
+# 
+# Top level modules:
+# 	FIFO_Control_testbench
+# End time: 23:07:38 on Jan 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/there/OneDrive\ -\ UW/CSE\ 371/lab2_task3 {C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/FIFO.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:07:38 on Jan 19,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/there/OneDrive - UW/CSE 371/lab2_task3" C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/FIFO.sv 
+# -- Compiling module FIFO
+# -- Compiling module FIFO_testbench
+# 
+# Top level modules:
+# 	FIFO_testbench
+# End time: 23:07:38 on Jan 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim -gui -l msim_transcript work.FIFO_Control_testbench -Lf altera_mf_ver
+# vsim -gui -l msim_transcript work.FIFO_Control_testbench -Lf altera_mf_ver 
+# Start time: 23:07:51 on Jan 19,2023
+# Loading sv_std.std
+# Loading work.FIFO_Control_testbench
+# Loading work.FIFO_Control
+# Loading work.fiveb_counter
+# ** Warning: (vsim-3015) C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/FIFO_Control.sv(19): [PCDPC] - Port size (1) does not match connection size (32) for port 'dec'. The port definition is at: C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/fiveb_counter.sv(22).
+#    Time: 0 ps  Iteration: 0  Instance: /FIFO_Control_testbench/dut/read_ptr File: C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/fiveb_counter.sv
+# ** Warning: (vsim-3839) C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/FIFO_Control.sv(21): Variable '/FIFO_Control_testbench/dut/dead', driven via a port connection, is multiply driven. See C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/FIFO_Control.sv(19).
+#    Time: 0 ps  Iteration: 0  Instance: /FIFO_Control_testbench/dut/write_ptr File: C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/fiveb_counter.sv
+# ** Warning: (vsim-3015) C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/FIFO_Control.sv(21): [PCDPC] - Port size (1) does not match connection size (32) for port 'dec'. The port definition is at: C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/fiveb_counter.sv(22).
+#    Time: 0 ps  Iteration: 0  Instance: /FIFO_Control_testbench/dut/write_ptr File: C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/fiveb_counter.sv
+add wave -position end  sim:/FIFO_Control_testbench/wr_en
+add wave -position end  sim:/FIFO_Control_testbench/empty
+add wave -position end  sim:/FIFO_Control_testbench/full
+add wave -position end  sim:/FIFO_Control_testbench/error
+add wave -position 0  sim:/FIFO_Control_testbench/readAddr
+add wave -position 1  sim:/FIFO_Control_testbench/writeAddr
+add wave -position end  sim:/FIFO_Control_testbench/read
+add wave -position end  sim:/FIFO_Control_testbench/write
+add wave -position end  sim:/FIFO_Control_testbench/reset
+add wave -position end  sim:/FIFO_Control_testbench/clk
+run -all
+# ** Note: $stop    : C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/FIFO_Control.sv(89)
+#    Time: 6250 ps  Iteration: 1  Instance: /FIFO_Control_testbench
+# Break in Module FIFO_Control_testbench at C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/FIFO_Control.sv line 89
+vsim work.fiveb_counter_testbench
+# End time: 00:17:20 on Jan 20,2023, Elapsed time: 1:09:29
+# Errors: 0, Warnings: 3
+# vsim work.fiveb_counter_testbench 
+# Start time: 00:17:20 on Jan 20,2023
+# Loading sv_std.std
+# Loading work.fiveb_counter_testbench
+# Loading work.fiveb_counter
+add wave -position end  sim:/fiveb_counter_testbench/count
+add wave -position end  sim:/fiveb_counter_testbench/inc
+add wave -position end  sim:/fiveb_counter_testbench/dec
+add wave -position end  sim:/fiveb_counter_testbench/clk
+add wave -position end  sim:/fiveb_counter_testbench/reset
+run -all
+# ** Note: $stop    : C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/fiveb_counter.sv(92)
+#    Time: 11450 ps  Iteration: 1  Instance: /fiveb_counter_testbench
+# Break in Module fiveb_counter_testbench at C:/Users/there/OneDrive - UW/CSE 371/lab2_task3/fiveb_counter.sv line 92
+# End time: 01:24:46 on Jan 20,2023, Elapsed time: 1:07:26
+# Errors: 0, Warnings: 0

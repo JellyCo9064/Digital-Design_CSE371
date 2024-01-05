@@ -1,0 +1,53 @@
+module rh_ctrl (
+		input logic [2:0] pp, hour
+		,input logic clk, reset
+	);
+	
+	
+	typedef enum { s_normal, s_rush, s_end } state;
+	
+	state ps, ns;
+	
+	always_comb begin
+	
+		case (ps)
+		
+			s_normal: begin
+				if (pp == 3'b111) begin
+					ns = s_rush;
+				end else begin
+					ns = s_normal;
+				end
+			end
+			
+			s_rush: begin
+				if (pp == 3'b000) begin
+					ns = s_end;
+				end else begin
+					ns = s_rush;
+				end
+			end
+			
+			s_end: begin
+				if (hour == 3'd0) begin
+					ns = s_normal;
+				end else begin
+					ns = s_end;
+				end
+			end
+		
+		endcase
+	
+	end
+	
+	
+	always_ff @(posedge clk) begin
+		if (reset) begin
+			ps <= s_normal;
+		end else begin
+			ps <= ns;
+		end
+	end
+	
+	
+endmodule  // rh_ctrl
